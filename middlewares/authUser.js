@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken'
 const authUser = async(req,res,next)=>{
     try {
         const {token} =req.headers
-        console.log("authUser",token)
+        // console.log("authUser",token)
         if(!token){
             return res.json({success:false,message:'Not Authoirzed Login Again'})
         }
